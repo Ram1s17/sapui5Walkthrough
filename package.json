@@ -1,5 +1,6 @@
 {
+  "name": "sapui5Walkthrough",
   "devDependencies": {
-    "@ui5/cli": "^2.14.9"
+    "@ui5/cli": "2.11.1"
   }
 }
