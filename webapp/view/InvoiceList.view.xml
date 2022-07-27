@@ -16,7 +16,9 @@
                 formatOptions: {
                     showMeasure: true
                 }
-            }"/>
+            }"
+            numberState="{= ${invoice>ExtendedPrice/0} > 50 ? 'Error' : 'Success' }"
+            intro="{= (${invoice>ExtendedPrice/0} * ${invoice>Quantity}).toFixed(2)} {invoice>ExtendedPrice/1}"/>
       </items>
    </List>
 </mvc:View>
