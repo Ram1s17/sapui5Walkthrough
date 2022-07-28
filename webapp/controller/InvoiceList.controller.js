@@ -11,7 +11,7 @@ sap.ui.define([
         formatter: formatter,
 		onInit : function () {
 			var oViewModel = new JSONModel({
-				currency: "EUR"
+				currency: "см"
 			});
 			this.getView().setModel(oViewModel, "view");
 		},
@@ -21,7 +21,7 @@ sap.ui.define([
 			var aFilter = [];
 			var sQuery = oEvent.getParameter("query");
 			if (sQuery) {
-				aFilter.push(new Filter("ProductName", FilterOperator.Contains, sQuery));
+				aFilter.push(new Filter("NameOfPlayer", FilterOperator.Contains, sQuery));
 			}
 
 			// filter binding

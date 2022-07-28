@@ -7,39 +7,29 @@
       headerText="{i18n>invoiceListTitle}"
       class="sapUiResponsiveMargin"
       width="auto"
-      items="{path: 'invoice>/Invoices', 
+      items="{path: 'football>/PersonalDataSet', 
             sorter : {
-                path : 'ShipperName',
+                path : 'PlayerId',
                 group : true
         }}" >
       <headerToolbar>
         <Toolbar>
-           <Title text="{i18n>invoiceListTitle}"/>
+           <Title text="{i18n>footballListTitle}"/>
            <ToolbarSpacer/>
            <SearchField width="50%" search=".onFilterInvoices"/>
         </Toolbar>
      </headerToolbar>
       <items>
          <ObjectListItem
-            title="{invoice>/Quality} {invoice>Quantity} x {invoice>ProductName} x {invoice>Status}" icon="{invoice>Icon}"
+            title="{football>NameOfPlayer} {football>SurnameOfPlayer} {football>PatronymicOfPlayer}" icon="sap-icon://soccer"
             number="{
-                path: 'invoice>ExtendedPrice',
+                parts: [{path: 'football>PlayerHeight'},  {path: 'view>/currency'}],
                 type: 'sap.ui.model.type.Currency',
                 formatOptions: {
                     showMeasure: true
                 }
             }"
-            numberState="{= ${invoice>ExtendedPrice/0} > 50 ? 'Error' : 'Success' }"
-            intro="{
-                parts: [{path: 'invoice>ExtendedPrice/0'}, {path: 'invoice>Quantity'}, {path: 'invoice>ExtendedPrice/1'}],
-                formatter: '.formatter.fullPrice'
-            }">
-            <firstStatus>
-                <ObjectStatus text="{
-                    path: 'invoice>Status',
-                    formatter: '.formatter.statusText'
-                }"/>
-            </firstStatus>
+            intro="{football>Nationality}">
         </ObjectListItem>
       </items>
    </List>

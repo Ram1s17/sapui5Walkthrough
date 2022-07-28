@@ -10,8 +10,8 @@
         "version": "1.0.0"
       },
       "dataSources": {
-        "invoiceRemote": {
-          "uri": "/V2/Northwind/Northwind.svc",
+        "footballRemote": {
+          "uri": "/ZFOOTBALL_APP_SRV",
           "type": "OData",
           "settings": {
             "odataVersion": "2.0"
@@ -50,8 +50,8 @@
             "fallbackLocale": ""
           }
         },
-        "invoice": {
-          "dataSource": "invoiceRemote"
+        "football": {
+          "dataSource": "footballRemote"
         }
       },
       "resources": {

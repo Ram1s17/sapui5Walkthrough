@@ -9,8 +9,8 @@ server:
       configuration:
         ignoreCertError: true # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
         backend:
-          - path: /V2/
-            url: https://services.odata.org
+          - path: /ZFOOTBALL_APP_SRV/
+            url: https://s4hana.local.net:44300/sap/opu/odata/sap
         ui5:
           path:
             - /resources
