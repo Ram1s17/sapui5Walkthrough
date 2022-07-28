@@ -30,6 +30,10 @@ sap.ui.define([
 			oBinding.filter(aFilter);
             var aDefaultFilters = oList.getBindingInfo("items").filters;
             oBinding.filter(aFilter.concat(aDefaultFilters));
+		},
+		onPress: function (oEvent) {
+			var oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("detail");
 		}
 
 	});

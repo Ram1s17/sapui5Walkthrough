@@ -29,6 +29,9 @@
                     showMeasure: true
                 }
             }"
+            numberState="{=	${football>PlayerHeight} > 50 ? 'Error' : 'Success' }"
+					type="Navigation"
+					press="onPress"
             intro="{football>Nationality}">
         </ObjectListItem>
       </items>
