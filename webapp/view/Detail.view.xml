@@ -1,14 +1,27 @@
-<mvc:View
-	controllerName="sap.ui.demo.walkthrough.controller.Detail"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
-	<Page
-		title="{i18n>detailPageTitle}"
-        showNavButton="true"
-		navButtonPress=".onNavBack">
-        <Text text="{football>Personal2Sport/JerseyNumber}"></Text>
-		<ObjectHeader
-			intro="{football>Nationality}"
-			title="{football>NameOfPlayer} {football>SurnameOfPlayer}"/>
+<mvc:View controllerName="sap.ui.demo.walkthrough.controller.Detail" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout">
+	<Page title="{i18n>detailPageTitle}" showNavButton="true" navButtonPress=".onNavBack">
+		<l:Grid defaultSpan="XL2 M2 S8" vSpacing="2" hSpacing="2" class="sapUiSmallMargin">
+			<Text text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, et saepe deleniti molestiae obcaecati nostrum totam itaque ut similique enim veniam ea nulla! Ipsam, error perspiciatis incidunt nihil tempora ea!">
+				<layoutData>
+					<l:GridData span="XL5 M12"/>
+				</layoutData>
+			</Text>
+			<Button text="Кнопка" type="Emphasized" width="100%">
+				<layoutData>
+					<l:GridData span="S4" linebreakS="true"/>
+				</layoutData>
+			</Button>
+			<Button text="Кнопка" type="Emphasized" width="100%">
+				<layoutData>
+					<l:GridData span="M3 S4" linebreakXL="true" linebreakS="true"/>
+				</layoutData>
+			</Button>
+			<Button text="Кнопка" type="Emphasized" width="100%"/>
+			<Button text="Кнопка" type="Emphasized" width="100%">
+				<layoutData>
+					<l:GridData span="XL12 M5 S12"/>
+				</layoutData>
+			</Button>
+		</l:Grid>
 	</Page>
 </mvc:View>
