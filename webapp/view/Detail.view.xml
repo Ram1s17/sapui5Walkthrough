@@ -1,9 +1,14 @@
 <mvc:View
+	controllerName="sap.ui.demo.walkthrough.controller.Detail"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
 	<Page
-		title="{i18n>detailPageTitle}">
+		title="{i18n>detailPageTitle}"
+        showNavButton="true"
+		navButtonPress=".onNavBack">
+        <Text text="{football>Personal2Sport/JerseyNumber}"></Text>
 		<ObjectHeader
-			title="Invoice"/>
+			intro="{football>Nationality}"
+			title="{football>NameOfPlayer} {football>SurnameOfPlayer}"/>
 	</Page>
 </mvc:View>
