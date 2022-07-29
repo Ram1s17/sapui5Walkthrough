@@ -14,3 +14,11 @@ html[dir="ltr"] .myAppDemoWT .myCustomButton.sapMBtn {
  .firstPanel .sapMPanelHdr {
     color: green;
  }
+
+ /*  ProductRating */
+.myAppDemoWTProductRating {
+	padding: 0.75rem;
+}
+.myAppDemoWTProductRating .sapMRI {
+	vertical-align: initial;
+}

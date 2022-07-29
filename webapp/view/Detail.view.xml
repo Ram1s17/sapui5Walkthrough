@@ -1,4 +1,4 @@
-<mvc:View controllerName="sap.ui.demo.walkthrough.controller.Detail" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout">
+<mvc:View controllerName="sap.ui.demo.walkthrough.controller.Detail" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:wt="sap.ui.demo.walkthrough.control">
 	<Page title="{i18n>detailPageTitle}" showNavButton="true" navButtonPress=".onNavBack">
 		<l:Grid defaultSpan="XL2 M2 S8" vSpacing="2" hSpacing="2" class="sapUiSmallMargin">
 			<Text text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, et saepe deleniti molestiae obcaecati nostrum totam itaque ut similique enim veniam ea nulla! Ipsam, error perspiciatis incidunt nihil tempora ea!">
@@ -23,5 +23,6 @@
 				</layoutData>
 			</Button>
 		</l:Grid>
+		<wt:ProductRating id="rating" class="sapUiSmallMarginBeginEnd" change=".onRatingChange"/>
 	</Page>
 </mvc:View>
